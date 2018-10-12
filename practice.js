@@ -70,7 +70,7 @@ var devMountainClassPet = dog.name;
 //The value of bark should be a function that returns the string "Woof woof".
 
 dog.bark = function() {
-  return "woof woof";
+  return "Woof woof";
 };
 
 //Store the result of invoking the bark method in a variable called ruff.
@@ -90,7 +90,14 @@ var ruff = dog.bark();
 
 function looper(arr1) {
   mySum = 0;
-  for (i = 0; i < arr1.length; i++) {}
+  for (i = 0; i < arr1.length; i++) {
+    if (arr1[i] % 2 !== 0) {
+      mySum += arr1[i];
+    } else if (arr1[i] >= 100) {
+      mySum += arr1[i];
+    }
+  }
+  return mySum;
 }
 
 //////////////////PROBLEM 7////////////////////
